@@ -153,37 +153,62 @@
 					</section>
 				</section>
 <!-- slide -->			<section>
+					<section>
 						<h2>Qual'è la strada migliore per raggiungere un nodo o un client?</h2>
 						<p>Ricorda: non c'è gerarchia e passaggi obbligati</p>
-						<div class="fragment">
-							<h3>Routing a terra</h3>
-							<ul>
-								<li>Le radio sui tetti hanno il firmware originale in ap/sta</li>
-								<li>Solo l'apparato a terra conosce la topologia della rete</li>
-							</ul>
-						</div>
-						<div class="fragment">
-							<h3>Routing sui tetti</h3>
-							<ul>
-								<li>Gli apparati hanno firmware che supporta 802.11s o adhoc</li>
-								<li>Ogni apparato conosce tutta la topologia della rete</li>
-							</ul>
-						</div>
-						<h2 class="fragment">Vantaggi? Svantaggi?</h2>
+					</section>
+					<section>
+						<h2>Routing a terra</h2>
+						<ul>
+							<li>Le radio sui tetti hanno il firmware originale in ap/sta</li>
+							<li>Solo l'apparato a terra conosce la topologia della rete</li>
+						</ul>
+						<h3>Vantaggi</h3>
+						<ul>
+							<li>Migliori performance (radio driver propietari)</li>
+							<li>Generalmente problemi solo nel router a terra</li>
+						</ul>
+						<h3>Svantaggi</h3>
+						<ul>
+							<li>Se problemi nel router a terra il nodo è down</li>
+							<li>Difficoltà di setup (quali nodi in ap/sta?)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Routing sui tetti</h2>
+						<ul>
+							<li>Gli apparati hanno firmware che supporta 802.11s o adhoc</li>
+							<li>Ogni apparato conosce tutta la topologia della rete</li>
+						</ul>
+						<h3>Vantaggi</h3>
+						<ul>
+							<li>Facilità di setup, tutti i firmare uguali</li>
+							<li>Facilità di monitoring</li>
+							<li>Resilienza</li>
+						</ul>
+						<h3>Svantaggi</h3>
+						<ul>
+							<li>Banda inversamente proporzionale al numero di hop</li>
+						</ul>
+					</section>
 				</section>
 <!-- slide -->			<section>
-					<h2>Hardware</h2>
-					<img width="300" src="img/mikrotik.png" alt="mikrotik logo">
-					<img width="300" src="img/ubiquiti.jpg" alt="ubiquiti logo">
-					<img width="300" src="img/tplink.jpg" alt="tplink logo">
-					<h2>Software</h2>
-					<p>RouterOs - AirOs - <a href="http://openwrt.org">OpenWrt</a><p>
-					<div class="fragment">	
-						<img width="400" src="img/libremesh.png" alt="ubiquiti logo">
+					<section>
+						<h2>Hardware</h2>
+						<img width="300" src="img/mikrotik.png" alt="mikrotik logo">
+						<img width="300" src="img/ubiquiti.jpg" alt="ubiquiti logo">
+						<img width="300" src="img/tplink.jpg" alt="tplink logo">
+						<h2>Software</h2>
+						<p>RouterOs - AirOs - <a href="http://openwrt.org">OpenWrt</a><p>
+						<img width="300" src="img/airgrid.jpg" alt="ubiquiti airgrid">
+					</section>
+					<section>
+						<h2>Il firmware opensource più promettente?</h2>
+						<img width="600" src="img/libremesh.png" alt="ubiquiti logo">
 						<p><a href="http://libre-mesh.org" title="libre-mesh site">libremesh.org</a> - <a href="http://libremap.net" title="libremap site">libremap.net</a></p>
 						<p>L2: batman-adv</p>
 						<p>L3: bmx</p>
-					</div>
+					</section>
 				</section>
 <!-- slide -->			<section>
 					<section>
@@ -215,13 +240,8 @@
 					<ul>
 						<li>Nel 2012 abolizione decreto Pisanu: <a href="http://wiki.ninux.org/LeggiWireless">wiki.ninux.org/LeggiWireless</a></li>
 						<li>Rispettare le potenze di emissione delle antenne</li>
-						<li>Carenze normative...</li>
+						<li>Condividere l'ADSL non è illegale, ma può violare l'EULA del tuo ISP</li>
 					</ul>
-					</div>
-					<div class="fragment">
-						<h2>Condividere l'adsl è legale?</h2>
-						<p>Verifica le condizioni contrattuali del tuo ISP (EULA)</p>
-						<p>altrimenti cambia operatore!</p>		
 					</div>
 				</section>
 <!-- slide -->			<section>
@@ -252,7 +272,7 @@
 					<ul>
 				</section>
 <!-- slide -->			<section>
-					<img width="600" src="img/ninux_logo.png" alt="ninux logo">
+					<img width="800" src="img/ninux_logo.png" alt="ninux logo">
 					<h2>Grazie dell'attenzione, domande?</h2>
 					<p>www: <a href="http://wiki.ninux.org">ninux.org</a> - <a href="http://iulii.net">iulii.net</a></p>
 					<p>email: <a href="mailto:contatti@ninux.org">contatti@ninux.org</a> - <a href="mailto:info@iulii.net">info@iulii.net</a></p>
