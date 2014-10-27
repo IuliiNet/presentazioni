@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Ninux - Wireless Community Network</title>
+
+		<meta name="description" content="presentazione di ninux al LinuxDay 2014 di Monfalcone (Gorizia)">
+		<meta name="author" content="Luca Postregna">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<!--<link rel="stylesheet" href="css/theme/default.css" id="theme">-->
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+<!-- slide -->
+				<section>
+					<img width="400" src="img/ninux_logo_2.png" alt="ninux logo">
+					<p>
+						<small>Monfalcone, 25 ottobre 2014</small>
+					</p>
+					<p>
+						<small>LinuxDay 2014</small>
+					</p>
+					<p>
+						<small>Created by <a href="http://twitter.com/lucapost">@lucapost</a> from <a href="http://iulii.net">IuliiNet</a> (aka <a href="http://ninux.org">Ninux</a> in Friuli)</small>
+					</p>
+				</section>
+<!-- slide -->			<section>
+					<section>
+						<h1>Cos'è una Wireless Community Network?</h1>
+					</section>
+					<section>
+						<h2>È fatta di persone!!!</h2>
+						<img width="800" src="img/circle.jpg" alt="circle community">
+					</section>
+					<section>
+						<h2>È una rete di telecomunicazioni</h2>
+						<br/>
+						<h2><a href="http://www.picopeer.net/PPA-it.html">PicoPeering Agreement v1.0</a></h2>
+						<br/>
+						<p>Si afferma il diritto di propietà dichiarando la volontà di permettere il <b>libero scambio</b> di dati</p>
+					</section>
+					<section>
+						<h2><a href="http://www.picopeer.net/PPA-it.html">PicoPeering Agreement v1.0</a></h2>
+						<br/>
+						<h3>Libero transito:</h3>
+						<p>non si interferisce con i dati</p>
+						<br/>
+						<div class="fragment">
+							<h3>Comunicazione aperta:</h3>
+							<p>si pubblica le info affinché il collegamento abbia luogo</p>
+						</div>
+						<br/>
+						<div class="fragment">
+						<h3>Non c'è un livello di servizio garantito</h3>
+						<p>revoca in ogni momento senza preavviso</p>
+						</div>
+					</section>
+				</section>
+<!-- slide -->			<section>
+					<section>
+						<h2>Com'è fatta la rete?</h2>
+						<br/>
+						<ul>
+							<li><b>Nodi (la struttura)</b>
+								<ul>
+								 	<li>backbone</li>
+								 	<li>foglia</li>
+								</ul>
+							</li>
+							<li class="fragment"><b>Clients (gli utilizzatori)</b>
+								<ul>
+									<li>smartphone, tablet</li>
+									<li>notebook, pc</li>
+									<li>server</li>
+								</ul>
+							</li>
+							<li class="fragment"><b>Servizi</b>
+								<ul>
+									<li>p2p, voip</li>
+									<li>http, ftp, smb, nfs</li>
+									<li>videosorveglianza, streaming</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<img width="500" src="img/nodo_sample_1.jpg"/>
+					</section>
+				</section>
+<!-- slide -->			<section>
+					<section>
+						<h2>Che tipi di link utilizzate?</h2>	
+						<div class="fragment">
+						<br/>
+							<h3>Wireless</h3>
+							<ul>
+								<li>punto - punto (sta/ap)</li>
+								<li>punto - multipunto (sta/ap)</li>
+								<li>mesh (802.11s, adhoc)</li>
+							</ul>
+						</div>
+						<br/>
+						<div class="fragment">
+							<h3>Cavo</h3>
+							<ul>
+								<li>ethernet</li>
+								<li>fibra</li>
+							</ul>
+						</div>
+						<br/>
+						<div class="fragment">
+							<p>VPN per collegare le isole (<a href="http://iulii.net">IuliiNet</a> è quella friulana)</p>
+						</div>
+					</section>
+					<section>
+						<h2>Cosa vuol dire rete mesh?</h2>
+						<img width="800" src="img/mesh.gif" alt="mesh links"/>
+						<p>ogni nodo è collegato a due o più vicini</p>
+					</section>
+					<section>
+						<h2>Conviene fare una mesh?</h2>
+						<br/>
+						<div class="fragment">
+							<h3>Vantaggi</h3>
+							<ul>
+								<li>costi contenuti</li>
+								<li>facilità di espansione</li>
+								<li>facilità di monitoraggio</li>
+							</ul>
+						</div>
+						<br/>
+						<div class="fragment">
+							<h3>Svantaggi</h3>
+							<ul>
+								<li>perdita di banda esponenziale al numero di hop</li>
+								<li>perdita di segnale sulla lunga distanza</li>
+								<li>interferenze/overlapping</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2>Alla fine si fanno reti miste</h2>
+						<img height="400" src="img/network.png"/>
+						<ul>
+							<li>punto-punto-multipunto sulle lunghe distanze</li>
+							<li>mesh sulle brevi distanze, fino 1km</li>
+						</ul>
+					</section>
+				</section>
+<!-- slide -->			<section>
+					<section>
+						<h2>Chi decide la strada migliore per raggiungere un servizio?</h2>
+						<img height="400" src="img/wireless-campus.jpg" alt="immagine supernodo">
+						<p>Ricorda! Non c'è gerarchia e passaggi obbligati!</p>
+					</section>
+					<section>
+						<h2>Routing a terra</h2>
+						<br/>
+						<ul>
+							<li>Apparati sui tetti hanno il firmware ap/sta</li>
+							<li>L'apparato a terra conosce la topologia della rete</li>
+						</ul>
+						<br/>
+						<br/>
+						<h3>Vantaggi</h3>
+						<ul>
+							<li>Migliori performance (radio drivers proprietari)</li>
+							<li>Generalmente problemi solo nel router a terra</li>
+						</ul>
+						<br/>
+						<br/>
+						<h3>Svantaggi</h3>
+						<ul>
+							<li>Se problemi nel router a terra il nodo è down</li>
+							<li>Difficoltà di setup (quali nodi in ap/sta?)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Routing sui tetti</h2>
+						<br/>
+						<ul>
+							<li>Apparati con firmware che supporta 802.11s o adhoc</li>
+							<li>Ogni apparato conosce tutta la topologia della rete</li>
+						</ul>
+						<br/>
+						<br/>
+						<h3>Vantaggi</h3>
+						<ul>
+							<li>Facilità di setup (unico firmware autoconfigurante)</li>
+							<li>Resilienza</li>
+						</ul>
+						<br/>
+						<br/>
+						<h3>Svantaggi</h3>
+						<ul>
+							<li>Banda inversamente proporzionale al numero di hop</li>
+						</ul>
+					</section>
+				</section>
+<!-- slide -->			<section>
+					<section>
+						<h2>Hardware</h2>
+						<img width="300" src="img/mikrotik.png" alt="mikrotik logo">
+						<img width="300" src="img/ubiquiti.jpg" alt="ubiquiti logo">
+						<img width="300" src="img/tplink.jpg" alt="tplink logo">
+						<h2>Software</h2>
+						<ul>
+							<li>RouterOs</li>
+							<li>AirOs</li>
+							<li><a href="http://openwrt.org">OpenWrt</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Il firmware opensource più promettente?</h2>
+						<img width="600" src="img/libremesh.png" alt="ubiquiti logo">
+						<p><a href="http://libre-mesh.org" title="libre-mesh site">libre-mesh.org</a></p>
+						<p>L2: <a href="http://www.open-mesh.org/projects/batman-adv/wiki">batman-adv</a></p>
+						<p>L3: <a href="http://bmx6.net/projects/bmx6">bmx6</a></p>
+					</section>
+				</section>
+<!-- slide -->			<section>
+					<section>
+						<h2>Quanto sono diffuse le Wireless Community Network?</h2>
+						<img width="800" src="img/world.jpg" alt="world"/>
+					</section>
+					<section>
+						<img width="600" src="img/friuli.jpg" alt="mappa iuliinet in friuli"/>
+						<p>FVG: <a href="http://iulii.net">iulii.net</a></p>
+					</section>
+					<section>
+						<img width="600" src="img/roma.jpg" alt="mappa ninux roma"/>
+						<p>Italia: Roma <a href="http://ninux.org">ninux.org</a></p>
+						<p>Ma Ninux è anche a Pisa, Verona, Vicenza, Bologna, Reggio Calabria, Catanzaro, Mistretta, Vittoria, ecc.</p>
+					</section>
+					<section>
+						<img width="600" src="img/barcellona.jpg" alt="mappa guifi"/>
+						<p>Europa: Barcellona <a href="http://guifi.net">guifi.net</a></p>
+						<p>Ma anche Freifunk, FunkFeuer, Wlan-lj, Awmn</p>
+					</section>
+				</section>
+<!-- slide -->			<section>
+					<h2>Quanto Costa?</h2>
+					<ul>
+						<li>~100€ per un nodo foglia con un solo apparato</li>
+						<li>~6€/anno corrente elettrica, 5W per apparato (ed il fotovoltaico?)</li>
+					</ul>
+					<br/>
+					<br/>
+					<div class="fragment">
+					<h2>È legale?</h2>
+					<ul>
+						<li>Nel 2012 abolizione decreto Pisanu <a href="http://wiki.ninux.org/LeggiWireless">wiki.ninux.org/LeggiWireless</a></li>
+						<li>Rispettare le potenze di emissione delle antenne</li>
+						<li>Condividere l'ADSL non è illegale, ma può violare l'EULA del tuo ISP</li>
+					</ul>
+					</div>
+				</section>
+<!-- slide -->			<section>
+					<h2>Come posso partecipare?</h2>
+					<img width="200" src="img/nodi_potenziali.jpg" alt="nodi potenziali">
+					<ul>
+						<li>Segna la posizione del tuo nodo potenziale su <a href="http://map.ninux.org">map.ninux.org</a></li>
+						<li>Presentati alla comunità:
+							<ul>
+								<li><a href="http://ml.ninux.org/mailman/listinfo/wireless" title="nesletter ninux">ml.ninux.org/mailman/listinfo/wireless</a></li>
+								<li><a href="http://ml.ninux.org/mailman/listinfo/iuliinet" title="nesletter ninux">ml.ninux.org/mailman/listinfo/iuliinet</a></li>
+							</ul>
+						</li>
+						<li>Leggi la documentazione:
+							<ul>
+								<li><a href="http://iulii.net" title="Il sito della wireless community network IuliiNet">iulii.net</a></li>
+								<li><a href="http://wiki.ninux.org" title="Il sito della wireless community network Ninux">wiki.ninux.org</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+<!-- slide -->			<section>
+					<img width="800" src="img/ninux_logo.png"/>
+					<h2>Grazie dell'attenzione</h2>
+					<h2> domande?</h2>
+					<br/>
+						<p><a href="http://wiki.ninux.org">www.ninux.org</a></p>
+						<p><a href="http://iulii.net">www.iulii.net</a></p>
+					<br/>
+					<br/>
+					<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+						<img alt="Licenza Creative Commons" style="border-width:0" src="img/cc.png" />
+					</a>
+				</section>
+			</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
